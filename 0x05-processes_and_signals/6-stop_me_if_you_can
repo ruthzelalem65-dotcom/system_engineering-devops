@@ -1,0 +1,14 @@
+#!/bin/bash
+# 4-to_infinity_and_beyond
+# Infinite loop printing until stop file exists
+
+while true; do
+    if [ -f /tmp/stop_infinity ]; then
+        echo "Terminated"
+        rm -f /tmp/stop_infinity
+        exit 0
+    fi
+    echo "To infinity and beyond"
+    sleep 2
+done
+
