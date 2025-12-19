@@ -1,5 +1,5 @@
-#!/bin/bash
-# This script continuously displays "To infinity and beyond" every 2 seconds
+#!/usr/bin/env bash
+# Infinite loop printing phrase
 
 while true; do
     echo "To infinity and beyond"

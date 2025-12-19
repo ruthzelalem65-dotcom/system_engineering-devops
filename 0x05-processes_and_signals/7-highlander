@@ -1,9 +1,6 @@
-#!/bin/bash
-# 7-highlander
-# Prints "To infinity and beyond" indefinitely
-# Prints "I am invincible!!!" when receiving SIGTERM
+#!/usr/bin/env bash
+# Prints phrase indefinitely and resists SIGTERM
 
-# Trap the SIGTERM signal
 trap 'echo "I am invincible!!!"' SIGTERM
 
 while true; do
